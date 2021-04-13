@@ -118,13 +118,3 @@ class keysight_33250a():
                                'PHASe +0.0000000000000E+00',
                                'PHASe:UNLock:ERRor:STATe 0',
                                'UNIT:ANGLe DEG' ]
-
-import pyvisa
-
-rm = pyvisa.ResourceManager()
-# print(rm.list_resources())
-arb = keysight_33250a(rm.open_resource('USB0::0x0957::0x0407::MY44046495::INSTR'))
-#arb.k33250a.write('*RST')
-time.sleep(2)
-# get_unique_scpi_list is a list of SCPI commands which are different from Power-On values
-print(arb.get_unique_scpi_list())
