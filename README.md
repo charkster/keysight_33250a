@@ -1,4 +1,6 @@
 # keysight_33250a
+![picture](https://keysight-h.assetsadobe.com/is/image/content/dam/keysight/en/img/migrated/scene7/products/gm/PROD-1000000803.epsg.pro-01.jpg)
+
 Python class to control Agilent/Keysight 33250a function generator.
 
 This python class implements a method called get_unique_scpi() which returns a list of scpi commands that are different to the *RST state of the instrument.
